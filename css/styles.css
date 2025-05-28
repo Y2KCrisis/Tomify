@@ -31,7 +31,7 @@ body {
 }
 
 h1,h2,h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     line-height: 1.1;
 
 }
@@ -232,7 +232,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -298,6 +298,7 @@ a {
     .btn{
         
         font-size: 1.5rem;
+      
 }
 }
 
@@ -320,12 +321,14 @@ a {
     border: 1px solid var(--color-borders);
     border-radius: var(--border-radius);
     display: flex;
+    
 }
 
 .input-group .input {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -344,6 +347,10 @@ a {
     border-radius: 7px;
     box-shadow: 0 0 20px 10px #f3f3f3;
     overflow: hidden;
+    font-size: 2rem;
+   
+   
+    
 }
 
 .card__header, 
@@ -376,6 +383,8 @@ a {
 
 .plan {
     transition: transform .2s ease-out;
+  
+    
 }
 
 .plan__name {
@@ -696,9 +705,11 @@ right: 5%;
     margin-bottom: 4rem;
 }
 
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    
     
 }
 
@@ -804,8 +815,9 @@ right: 5%;
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -816,7 +828,7 @@ right: 5%;
 
 @media screen and (min-width: 768px) {
     .block-domain__prices {
-        grid-template-columns: repeat(auto-fit, minmax(10rem 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(10rem ,1fr));
     }
 }
 
@@ -824,7 +836,16 @@ right: 5%;
 
 .block-plans .grid {
     gap: 8rem 4rem;
+    margin-top: 4rem;
+   
 
+}
+
+@media screen and (min-width: 768px) {
+    .block-plans .grid {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
 }
 
 .block-plans .card {
